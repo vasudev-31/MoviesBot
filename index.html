@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        header {
+           
+            color: white;
+            padding: 50px;
+            text-align: left;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position:bottom;
+           
+        }
+        .search-container {
+            margin-top: 10px;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 400px;
+            border: none;
+            border-radius: 5px;
+            
+        }
+        .search-container button {
+            padding: 10px;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .search-container button:hover {
+            background-color: #ddd;
+        }
+        .container {
+            margin: 100px 0 0 200px;
+            margin-top: 3%;
+            width: 70%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+
+        }
+        .container img{
+            width: 20%;
+            height: 100%;
+           object-fit: cover;
+           border-radius: 10px;
+           border: 2px solid rgb(249, 250, 251); 
+           transition: all ease-in-out 0.3s; 
+          
+        }
+        .container img:hover{
+            width: 30%;
+            
+           
+        }
+        
+        
+        .navbar ul {
+            list-style-type: none;
+            text-align: center;
+           margin: 0;
+            padding: 10px;
+            justify-content: space-between;
+            gap: 25px;
+            transition: transform 0.3s ease;
+            
+            
+            
+        }
+        .navbar a{
+        color: #ddd;
+        font-weight: bold;
+        font-size: 25px;
+        text-decoration: none;
+        padding: 10px 40px;
+         display:flexbox;
+         
+       
+        
+        }
+    
+      
+        .navbar  :hover{
+            transform: scale(1.2);
+        }
+        
+        .navbar a:hover {
+           background-color: #3e8e41; 
+            border-radius: 5px;  
+           
+        }
+
+       
+
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Movie Bot</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for Moviess...">
+        <button onclick="searchProducts()">Search</button>
+    </div>
+    
+</header>
+<div class="navbar">
+    <ul>
+    <a href="#">Movies</a>
+    <a href="#">Series</a>
+    <a href="#">TV Shows</a>
+</ul>
+</div>
+
+<div class="container">
+
+    <img src="kannada1.jpg" alt="">
+
+    <img src="English1.jpg" alt="">
+
+    <img src="hindi.jpg" alt="">
+
+    <img src="mlym.jpg" alt="">
+
+    <img src="tamil.jpg" alt="">
+
+    <img src="telgu.jpg" alt="">
+
+</div>
+
+
+</body>
+</html>
